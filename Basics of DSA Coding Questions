@@ -1,0 +1,39 @@
+1)If ElseIf
+Given marks of a student, print on the screen:
+
+Grade A if marks >= 90
+Grade B if marks >= 70
+Grade C if marks >= 50
+Grade D if marks >= 35
+Fail, otherwise.
+
+
+For printing use:-
+
+for C++ : cout << variable_name;
+for Java : System.out.print();
+for Python : print()
+for Javascript : console.log()
+
+#Code:-class Solution {
+public:
+    void studentGrade(int marks) {
+        if(marks >= 90)
+            
+        {cout << "A";
+        } //marks < 90 and marks >= 70,,go in descending order in if else if and not from 35 to 90 i.e ascending order
+        else if(marks >= 70){
+            cout << "B";
+        }
+        else if(marks >= 50){
+            cout << "C";
+        }
+       
+        else if(marks >= 35){
+            cout << "D";
+        }
+        else{
+            cout << "Fail";;
+        }
+}
+};
